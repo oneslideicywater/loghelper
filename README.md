@@ -4,8 +4,7 @@ golang loghelper
 
 ## usage
 ```go
-
-import "github.com/oneslideicywater/loghelper/loghelper"
+import "github.com/oneslideicywater/loghelper/log"
 ```
 
 there are actually several simple helper methods,only depend on fmt.

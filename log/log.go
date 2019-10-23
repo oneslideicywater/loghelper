@@ -1,4 +1,4 @@
-package loghelper
+package log
 
 import (
 	"fmt"
@@ -56,14 +56,14 @@ func formatWithHighLight(item string,color int) string {
 
 // print with font color and background
 func Combine(item string,color string,bgColor string)  {
-	fmt.Println(formatWithBackground(item,color,bgColor))
+	fmt.Print(formatWithBackground(item,color,bgColor))
 }
 
 func UnderLine(item string,color string)  {
-	fmt.Println(formatWithUnderLine(item,transform(color)))
+	fmt.Print(formatWithUnderLine(item,transform(color)))
 }
 func HighLight(item string,color string)  {
-	fmt.Println(formatWithHighLight(item,transform(color)))
+	fmt.Print(formatWithHighLight(item,transform(color)))
 }
 //transform color string to its corresponding int format
 func transform(color string) int  {
